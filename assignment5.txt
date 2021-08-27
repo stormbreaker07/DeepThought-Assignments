@@ -1,0 +1,42 @@
+1-error is when you are using React then you have to import React from react.
+
+2-error is when you are using or calling a constructor then super() should be used as it call the parent contructor so that 
+    if you have used some variable from parent class or component.
+
+
+CORRECT CODE IS GIVEN BELOW : 
+
+
+import React from 'react';
+
+class MyComponent extends React.Component {
+ constructor(props) {
+     super()
+   // set the default internal state
+   this.state = {
+     clicks: 0
+   };
+ }
+ componentDidMount() {
+   this.refs.myComponentDiv.addEventListener('click', this.clickHandler);
+ }
+ componentWillUnmount() {
+   this.refs.myComponentDiv.removeEventListener('click', this.clickHandler);
+ }
+ clickHandler() {
+   this.setState({
+     clicks: this.clicks + 1
+   });
+ }
+ render() {
+   let children = this.props.children;
+   return (
+     <div className="my-component" ref="myComponentDiv">
+     <h2>My Component ({this.state.clicks} clicks})</h2>
+     <h3>{this.props.headerText}</h3>
+   {children}
+   </div>
+   );
+ }
+}
+

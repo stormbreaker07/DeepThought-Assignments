@@ -1,0 +1,13 @@
+@import url(../font-awesome-4.7.0/scss/font-awesome.css);
+
+.iconSize {
+    font-size: 8rem;
+}
+
+.deleteButton {
+    color : #ff00003b;
+}
+
+.deleteButton:hover {
+    color : red;
+}

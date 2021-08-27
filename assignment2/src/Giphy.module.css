@@ -1,0 +1,170 @@
+
+.header {
+    background-color: #222;
+    height: 186px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.redditLinkPos {
+    position: absolute;
+    left: 93%;
+    white-space: nowrap;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+
+.searchBar {
+    padding: 10px 0px 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    border-radius: 11px;
+    background-color: #f9f9f9;
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.searchBar:hover {
+    color: deeppink;
+}
+
+
+
+.inputStyle {
+    width: 100%;
+    border: none;
+    padding: 10px 0px;
+    font-size: 1.5em;
+    background: none;
+    font-weight: bold;
+    margin-top: -2px;
+    text-decoration-style: dotted;
+    font-family: sans-serif;
+}
+
+.inputStyle:hover {
+    color: deeppink;
+}
+
+
+.resultBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    background: none;
+
+}
+
+.history {
+    align-self: flex-start;
+    background: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width:30%;
+}
+
+.ulStyle {
+    padding: 0;
+    width: 80%;
+    overflow: hidden;
+}
+
+
+
+.searchHistory {
+    list-style: none;
+    padding: 10px 20px;
+    background-color: #fbfbfb;
+    margin: 5px;
+    border-radius: 6px;
+
+}
+
+.searchHistory:hover {
+    color: deeppink;
+    background: #ffc0cb5e;
+}
+
+.searchResultBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 85%;
+    background: none;
+    flex-wrap: wrap;
+}
+
+
+.liStyle {
+    list-style: none;
+    padding: 10px 20px;
+    background-color: #fbfbfb;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.liStyle:hover {
+    color: deeppink;
+    background: #ffc0cb5e;
+}
+
+.gifOuterContainer {
+    width: 20%;
+    background-color: #f6f6f652;
+    border: 1px solid #eee;
+    margin: 20px;
+    padding: 10px 30px;
+    overflow-x: hidden;
+    border-radius: 11px;
+    opacity: 0.6;
+}
+
+.gifOuterContainer:hover {
+    opacity: 1;
+    color: deeppink;
+}
+
+.gifOuterContainer:hover .gifTestColor {
+    color: deeppink;
+}
+
+.gifOuterContainer:hover .iconStyle {
+    color: deeppink;
+}
+
+
+.gifTestColor {
+    text-transform: capitalize;
+    color : black;
+}
+
+.gifImageBoundary {
+    margin-right: 10px;
+    color: #333;
+}
+
+.imageSize {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.iconStyle {
+    color : black;
+}

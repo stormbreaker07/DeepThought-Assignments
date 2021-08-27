@@ -1,0 +1,15 @@
+
+.titleFont {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+.headerStyle {
+    background-color: #222;
+    height: 186px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}

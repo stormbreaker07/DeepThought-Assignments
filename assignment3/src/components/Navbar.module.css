@@ -1,0 +1,26 @@
+
+.inActive {
+    width: 10%;
+    background-color: #6b6b6b;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.bar {
+    width: 7%;
+    background-color: #6b6b6b;
+    padding: 1px;
+    border-radius: 42px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+
+}
+
+.leveling {
+    color: #768dcb;
+}

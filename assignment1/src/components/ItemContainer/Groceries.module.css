@@ -1,0 +1,55 @@
+
+.outerContainer {
+    display: flex;
+    flex-direction: column;
+    width : 30%;
+}
+
+.innerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+.list {
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+
+.list li{
+    list-style: none;
+    margin: 7px 0px;
+    padding: 10px;
+}
+
+.list li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.list li:nth-child(even) {
+    background: #efefef;
+}
+
+.list li::before {
+    font-family: FontAwesome;
+    content: "\F196 \A0";
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.list li:hover::before {
+    font-family: FontAwesome;
+    content: "\F0FE \A0";
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+}

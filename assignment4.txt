@@ -1,0 +1,51 @@
+context api and hook together are used to persist the login authentication data after reloading the page.
+two important hooks used are useReducer and useContext.
+useReducer is similar to redux reducer as it also take two argument state and action.
+we have to create a authContext and wrap  the App.js component with it so that it child can access that data.
+Now whenever the page reloads, no matter what route you are on, the user will be authenticated as loadUser action will be triggered on each re-render.
+
+
+App.js
+import {loadUser}  from '../actions/auth';
+store.dispatch(loadUser());
+
+
+index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import AuthState from './context/auth/AuthState'
+ReactDOM.render(
+ <React.StrictMode>
+   <AuthState>
+     <App />
+   </AuthState>
+ </React.StrictMode>,
+ document.getElementById('root')
+);
+App.js
+ const authContext = useContext(AuthContext);
+ const { loadUser } = authContext;
+ useEffect(() => {
+   loadUser();
+ },[])
+loadUser
+   const loadUser = async () => {
+       const token = sessionStorage.getItem('token');
+       if(!token){
+           dispatch({
+               type: ERROR
+           })
+       }
+       setAuthToken(token);
+       try {
+           const res = await axios('/api/auth');
+           dispatch({
+               type: USER_LOADED,
+               payload: res.data.data
+           })
+       } catch (err) {
+          console.error(err);
+       }
+   }
+

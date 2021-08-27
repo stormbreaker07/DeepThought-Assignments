@@ -1,0 +1,8 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(180, 88, 88, 0.27);
+  height: 100%;
+  width:100%
+}

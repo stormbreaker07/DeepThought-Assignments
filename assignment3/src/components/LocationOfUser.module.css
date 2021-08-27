@@ -1,0 +1,72 @@
+.outerContainer {
+    diplay :flex;
+    flex-direction: row;
+    justify-content: center;
+    width : 60%;
+    height: 60%;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right:auto;
+    width: 40%;
+    order: 2;
+    border: rgba(62, 58, 58, 0.4) 3px solid ;
+}
+
+.outerContainer h1 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.62);
+}
+
+.outerContainer h3 {
+    margin-top: 20%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.62);
+}
+
+.buttonContainer {
+    order: 3;
+    width: 30%;
+    height: 7%;
+    display: flex;
+    float: right;
+    flex-direction : row;
+    justify-content: space-between;
+
+}
+
+.content {
+    order : 2;
+    height: 70%;
+}
+
+.level {
+    order: 1;
+    height: 15%;
+}
+
+
+.buttonContainer button {
+    color: #d9d9d9;
+    padding: 21px 45px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15%;
+    text-decoration: none;
+    background-color: rgba(6, 6, 145, 0.65);
+}
+
+.buttonContainer button:hover {
+    background-color: rgba(60, 60, 239, 0.65);
+}
+
+.buttonContainer button:hover a{
+    color: white ;
+}
+
+
+.buttonContainer button a {
+    text-decoration: none;
+    color: #d9d9d9;
+}
